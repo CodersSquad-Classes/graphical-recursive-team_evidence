@@ -35,7 +35,7 @@ This program recursively generates the Sierpinski Arrowhead Curve. This is a typ
 
 The algorithm starts with a base line and recursively replaces each segment with a pattern of three smaller segments, using 60-degree turns. The order parameter controls the recursion depth, increasing the detail of the final fractal shape. The step parameter controls the length of the smallest line segment.
 
-## How to Compile & Run Your Program
+## How to Compile & Run the Program
 Compilation
 To compile the program, you'll need a C++ compiler like g++. Open a terminal in the directory where you have the Sierpinski.cpp file and run the following command:
 
