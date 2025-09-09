@@ -30,8 +30,39 @@ From the _Essential Algorithms: A Practical Approach to Computer Algorithms_ boo
 
 # How to compile & run you program
 
-- _You must document compilation and execution here_
-- _Don't forget to document which algorithm you're implementing_
+## Algorithm Implemented
+This program recursively generates the Sierpinski Arrowhead Curve. This is a type of fractal curve whose limit is the Sierpinski Triangle.
+
+The algorithm starts with a base line and recursively replaces each segment with a pattern of three smaller segments, using 60-degree turns. The order parameter controls the recursion depth, increasing the detail of the final fractal shape. The step parameter controls the length of the smallest line segment.
+
+## How to Compile & Run Your Program
+Compilation
+To compile the program, you'll need a C++ compiler like g++. Open a terminal in the directory where you have the Sierpinski.cpp file and run the following command:
+
+Bash
+
+g++ -std=c++11 -o sierpinski Sierpinski.cpp
+This command will compile your source code and create an executable file named sierpinski.
+
+Execution
+The program requires two parameters from the command line:
+
+<order>: An integer for the recursion depth (e.g., 5 is a good starting point).
+
+<step>: An integer for the length of the smallest line segment (e.g., 10).
+
+Run the program using the following format:
+
+Bash
+
+./sierpinski <order> <step>
+Example:
+To generate a curve of order 5 with a step size of 10, you would run:
+
+Bash
+
+./sierpinski 5 10
+This will generate a file named lines.txt in the same directory, containing the line segments for the visualizer.
 
 # Grading Policy
 
