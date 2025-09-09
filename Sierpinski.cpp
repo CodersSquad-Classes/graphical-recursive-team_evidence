@@ -80,3 +80,4 @@ int main (int argc, char* argv[]) {
     file.close();
     cout << "lines.txt generated\n";
     return 0;
+}
