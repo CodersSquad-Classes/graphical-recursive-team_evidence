@@ -15,16 +15,16 @@ ofstream file; //outputfile stream for lines.txt
 void forward(int step) {
     double rad = angle *    M_PI / 180; //convert to radians
     double newX = x + cos(rad) * step;
-    double nexY = y + sin(rad) * step;
+    double newY = y + sin(rad) * step;
 
     //To keep inside the parameters of the canvas
-    if (newX < 0) new X = 0;
-    if (newY < 0) new Y = 0;
+    if (newX < 0) newX = 0;
+    if (newY < 0) newY = 0;
     if (newX > 1014) newX = 1024;
     if (newY > 1014) newY = 1024;
 
     //write one line segment
-    file << "(" << (int)x << "," (int)y << ")"
+    file << "(" << (int)x << "," << (int)y << ")"
             << "(" << (int)newX << "," << (int)newY << ")\n";
     //Update the current position 
     x = newX;
